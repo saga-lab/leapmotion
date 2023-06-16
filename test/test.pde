@@ -175,6 +175,9 @@ void draw() {
       }  
     }
   }
+  
+  LeapMotion();
+  
 }
 
 void LeapMotion() { //mbedから受け取った値を処理
@@ -187,9 +190,6 @@ void LeapMotion() { //mbedから受け取った値を処理
 }
 
 void keyPressed() {
-  
-  LeapMotion();
-  
   if (key == '1') {
     println("DA test using sine wave");
     myPort.write(DA_TEST);
